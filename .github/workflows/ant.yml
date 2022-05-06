@@ -23,3 +23,7 @@ jobs:
         distribution: 'temurin'
     - name: Build with Ant
       run: ant -noinput -buildfile build.xml
+    - name: List all
+      run: ls -lah
+    - name: which branch
+      run: echo $(git branch)
