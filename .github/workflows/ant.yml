@@ -30,3 +30,9 @@ jobs:
 
     - name: Build with Ant
       run: ant -noinput -buildfile build.xml ant -version
+
+    - name: list files
+      run: ls -lah
+
+    - name: Git Branch
+      run: echo $(git branch)
